@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  background: rgb(25, 35, 125);
+  background: rgb(25,35,125);
 }
 
 div.drop-container {
@@ -13,6 +13,7 @@ div.drop-container {
   height: 200px;
   width: 200px;
 }
+
 
 div.drop {
   position: absolute;
@@ -31,10 +32,7 @@ h1 {
   position: absolute;
   font-size: 2.5em;
   height: 1em;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   z-index: 2;
   margin: auto;
   text-align: center;
@@ -74,17 +72,13 @@ div.drop-container:after {
 @keyframes drip {
   45% {
     top: 0;
-    width: 200px; /* Initial size */
-    height: 200px; /* Initial size */
-    border-radius: 100% 5% 100% 100%; /* Droplet shape */
-    transform: rotate(-45deg); /* Initial rotation */
+    border-radius: 100% 5% 100% 100%;
+    transform: rotate(-45deg);
   }
   100% {
     top: 0;
-    width: 500px; /* Larger size */
-    height: 500px; /* Larger size */
-    transform: rotate(0deg); /* No rotation */
-    border-radius: 100%; /* Full circle */
+    transform: rotate(0deg);
+    border-radius: 100%;
   }
 }
 
